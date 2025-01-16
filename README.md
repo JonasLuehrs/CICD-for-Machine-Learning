@@ -15,3 +15,8 @@ From training to evaluation, the entire process is automated using [GitHub actio
 
 ## Dataset
 [Drug Classification](https://www.kaggle.com/datasets/prathamtripathi/drug-classification)
+
+
+## Web Application
+
+![gradio_drug_app](./Images/gradio_drug_app.JPG)
