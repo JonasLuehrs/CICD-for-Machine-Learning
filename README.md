@@ -18,8 +18,7 @@ From training to evaluation, the entire process is automated using [GitHub actio
 
 ## CI/CD Pipeline
 
-![cicd_pipeline](./Images\cicd-pipeline.png)
-
+![cicd_pipeline](./Images/cicd-pipeline.png)
 
 ## Web Application
 
