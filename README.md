@@ -1,4 +1,4 @@
-# CICD-for-Machine-Learning
+# CI/CD for Machine Learning
 [![CI](https://github.com/kingabzpro/CICD-for-Machine-Learning/actions/workflows/ci.yml/badge.svg)](https://github.com/JonasLuehrs/CICD-for-Machine-Learning/actions/workflows/ci.yml)
 [![CI](https://github.com/kingabzpro/CICD-for-Machine-Learning/actions/workflows/cd.yml/badge.svg)](https://github.com/JonasLuehrs/CICD-for-Machine-Learning/actions/workflows/cd.yml)
 
@@ -15,6 +15,10 @@ From training to evaluation, the entire process is automated using [GitHub actio
 
 ## Dataset
 [Drug Classification](https://www.kaggle.com/datasets/prathamtripathi/drug-classification)
+
+## CI/CD Pipeline
+
+![cicd_pipeline](./Images\cicd-pipeline.png)
 
 
 ## Web Application
