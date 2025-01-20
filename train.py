@@ -43,6 +43,7 @@ pipe = Pipeline(
 ## Training
 pipe.fit(X_train, y_train)
 
+print("Model Training: Done")
 
 ## Model Evaluation
 predictions = pipe.predict(X_test)
@@ -50,7 +51,7 @@ accuracy = accuracy_score(y_test, predictions)
 f1 = f1_score(y_test, predictions, average="macro")
 
 print("Accuracy:", str(round(accuracy, 2) * 100) + "%", "F1:", round(f1, 2))
-
+print("Model Evaluation: Done")
 
 ## Confusion Matrix Plot
 import matplotlib.pyplot as plt
