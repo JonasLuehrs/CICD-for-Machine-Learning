@@ -13,6 +13,9 @@ This project trains a random forest algorithm with [scikit-learn](https://scikit
 
 From training to evaluation, the entire process is automated using [GitHub actions](https://github.com/features/actions). Pushing code to the GitHub repository will trigger the training, evaluation and deployment, leading to an updated web application, model, and results on Hugging Face (see https://huggingface.co/spaces/jonas-luehrs/Drug-Classification).
 
+The Makefile includes commands to install Python packages (install), format code (format), train scripts (train), and generate CML reports (eval), push the updated model and results to the "update" branch (update-branch), and upload the new model, results, and gradio app to the Hugging Face space (deploy).
+
+
 ## Dataset
 [Drug Classification](https://www.kaggle.com/datasets/prathamtripathi/drug-classification)
 
