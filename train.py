@@ -17,14 +17,15 @@ from sklearn.model_selection import train_test_split
 X = drug_df.drop("Drug", axis=1).values
 y = drug_df.Drug.values
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.3, random_state=125
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=125)
+
+print(
+    "#############################################################", "##############################################################"
 )
 
-
 ## Pipeline
-cat_col = [1,2,3]
-num_col = [0,4]
+cat_col = [1, 2, 3]
+num_col = [0, 4]
 
 transform = ColumnTransformer(
     [
@@ -69,3 +70,4 @@ with open("./Results/metrics.txt", "w") as outfile:
 
 ## Saving the model file
 sio.dump(pipe, "./Model/drug_pipeline.skops")
+print("test")
