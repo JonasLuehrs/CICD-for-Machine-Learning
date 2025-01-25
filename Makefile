@@ -1,9 +1,10 @@
 install:
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+		pip install pre-commit &&\
+			pip install -r requirements.txt
 
 format:
-	black --check --diff *.py
+	pre-commit run -a
 
 train:
 	python train.py
