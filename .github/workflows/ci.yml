@@ -1,9 +1,10 @@
 name: Continuous Integration
 on:
   workflow_run:
-    workflows: ["Continuous Integration"]
+    workflows: ["Pre-commit"]
     types:
       - completed
+  
   workflow_dispatch:
   
 permissions: write-all
