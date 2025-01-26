@@ -40,3 +40,7 @@ The installed pre-commit hooks are:
 - [`black`](https://github.com/psf/black) - Code formatter (Line length 100)
 - [`flake8`](https://github.com/PyCQA/flake8) Code linter (Selected rules)
 - [`isort`](https://github.com/PyCQA/isort) - Import sorter
+
+To check and autofix pull requests, the GitHub action [pre-commit.ci lite]((https://pre-commit.ci/lite)) is used.
+To use it, you need to add it to this repository as a [GitHub application](https://github.com/apps/pre-commit-ci-lite/installations/new).
+Here is an [example](https://github.com/JonasLuehrs/CICD-for-Machine-Learning/pull/2) of how the pre-commit-ci-lite bot autfixes a pull request.
