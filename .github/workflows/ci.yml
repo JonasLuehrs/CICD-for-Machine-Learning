@@ -1,9 +1,9 @@
 name: Continuous Integration
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_run:
+    workflows: ["Continuous Integration"]
+    types:
+      - completed
   workflow_dispatch:
   
 permissions: write-all
@@ -21,10 +21,6 @@ jobs:
           python-version: '3.11'
       - name: Install Dependencies
         run: make install
-      - name: Format
-        uses: pre-commit/action@v3.0.1
-      - uses: pre-commit-ci/lite-action@v1.1.0
-        if: always()      
       - name: Train
         run: make train
       - name: Evaluation        

@@ -4,7 +4,7 @@ install:
 			pip install -r requirements.txt
 
 format:
-	pre-commit run -a
+	pre-commit run --show-diff-on-failure --color=always --all-files
 
 train:
 	python train.py
