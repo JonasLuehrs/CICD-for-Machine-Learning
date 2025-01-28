@@ -8,6 +8,10 @@ Tutorial: https://www.datacamp.com/tutorial/ci-cd-for-machine-learning
 
 Original repository: https://github.com/kingabzpro/CICD-for-Machine-Learning
 
+Additions to the original project:
+- Add local pre-commit hooks
+- Add the GitHub action 'pre-commit.ci lite'
+
 ## Project Description
 This project trains a random forest algorithm with [scikit-learn](https://scikit-learn.org/1.5/index.html) pipelines to build a drug classifier. The evaluation is done automatically using [CML](https://cml.dev/) (Continuous Machine Learning). A web application is build with [gradio](https://www.gradio.app/) and deployed on the [Hugging Face Hub](https://huggingface.co/spaces). 
 
