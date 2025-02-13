@@ -75,3 +75,14 @@ Run the app locally:
 python ./App/drug_app.py 
 ````
 The Gradio app should now be accessible at http://localhost:7860.
+
+## Run the app locally with Docker
+Make sure that you have Docker installed, see [here](https://www.docker.com/get-started/).
+
+Execute the following commands
+````
+docker build -t gradio-app .
+docker run -p 7860:7860 gradio-app
+````
+
+Similar to the first approach you should be able to access the Gradio app at http://localhost:7860.
