@@ -48,3 +48,30 @@ The installed pre-commit hooks are:
 To check and autofix pull requests, the GitHub action [pre-commit.ci lite]((https://pre-commit.ci/lite)) is used.
 To use it, you need to add it to this repository as a [GitHub application](https://github.com/apps/pre-commit-ci-lite/installations/new).
 Here is an [example](https://github.com/JonasLuehrs/CICD-for-Machine-Learning/pull/2) of how the pre-commit-ci-lite bot autfixes a pull request.
+
+# Installation
+Clone the repository:
+````
+git clone https://github.com/JonasLuehrs/mlops-workflow.git
+````
+
+Create a new virtual environment:
+````
+cd mlops-workflow
+# Create a new virtual environment
+python -m venv venv
+# Activate environment for Linux
+source venv/bin/activate
+# Activate environment for Windows
+source venv\Scripts\activate
+# Install packages
+pip install -r requirements.txt
+````
+
+The pipeline needs to be executed at least once, so that we have a model for drug classification available.
+
+Run the app locally:
+````
+python ./App/drug_app.py 
+````
+The Gradio app should now be accessible at http://localhost:7860.
