@@ -10,13 +10,13 @@ Original repository: https://github.com/kingabzpro/CICD-for-Machine-Learning
 
 Additions to the original project:
 - Add local pre-commit hooks
-- Add the GitHub action 'pre-commit.ci lite'
+- Add the GitHub Action 'pre-commit.ci lite'
 - Add Docker
 
 ## Project Description
 This project trains a random forest algorithm with [scikit-learn](https://scikit-learn.org/1.5/index.html) pipelines to build a drug classifier. The evaluation is done automatically using [CML](https://cml.dev/) (Continuous Machine Learning). A web application is build with [gradio](https://www.gradio.app/) and deployed on the [Hugging Face Hub](https://huggingface.co/spaces). 
 
-From training to evaluation, the entire process is automated using [GitHub actions](https://github.com/features/actions). Pushing code to the GitHub repository will trigger the training, evaluation and deployment, leading to an updated web application, model, and results on Hugging Face (see https://huggingface.co/spaces/jonas-luehrs/Drug-Classification).
+From training to evaluation, the entire process is automated using [GitHub Actions](https://github.com/features/actions). Pushing code to the GitHub repository will trigger the training, evaluation and deployment, leading to an updated web application, model, and results on Hugging Face (see https://huggingface.co/spaces/jonas-luehrs/Drug-Classification).
 
 The Makefile includes commands to install Python packages (install), format code (format), train scripts (train), and generate CML reports (eval), push the updated model and results to the "update" branch (update-branch), and upload the new model, results, and gradio app to the Hugging Face space (deploy).
 
@@ -43,10 +43,10 @@ This will install the pre-commit hooks in your local repository. The pre-commit 
 
 The installed pre-commit hooks are:
 - [`black`](https://github.com/psf/black) - Code formatter (Line length 100)
-- [`flake8`](https://github.com/PyCQA/flake8) Code linter (Selected rules)
+- [`flake8`](https://github.com/PyCQA/flake8) - Code linter (Selected rules)
 - [`isort`](https://github.com/PyCQA/isort) - Import sorter
 
-To check and autofix pull requests, the GitHub action [pre-commit.ci lite]((https://pre-commit.ci/lite)) is used.
+To check and autofix pull requests, the GitHub Action [pre-commit.ci lite]((https://pre-commit.ci/lite)) is used.
 To use it, you need to add it to this repository as a [GitHub application](https://github.com/apps/pre-commit-ci-lite/installations/new).
 Here is an [example](https://github.com/JonasLuehrs/CICD-for-Machine-Learning/pull/2) of how the pre-commit-ci-lite bot autfixes a pull request.
 
